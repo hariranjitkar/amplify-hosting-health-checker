@@ -40,10 +40,10 @@ export const createAppSyncAPI = (scope: Construct, props: AppSyncAPIProps) => {
 
 	const amplifyHttpDS = api.addHttpDataSource(
 		'amplifyHttpDS',
-		'https://amplify.us-east-1.amazonaws.com',
+		'https://amplify.eu-north-1.amazonaws.com',
 		{
 			authorizationConfig: {
-				signingRegion: 'us-east-1',
+				signingRegion: 'us-north-1',
 				signingServiceName: 'amplify',
 			},
 		}
